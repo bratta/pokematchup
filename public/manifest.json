@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Pokémon Matchup",
+  "name": "Pokémon Type Matchup Tool",
   "icons": [
     {
       "src": "favicon.ico",
@@ -20,6 +20,6 @@
   ],
   "start_url": ".",
   "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "theme_color": "#fcd0a1",
+  "background_color": "#1c3144"
 }

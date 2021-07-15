@@ -1,0 +1,11 @@
+{
+  "downloadsFolder": "src/cypress/downloads",
+  "fixturesFolder": "src/cypress/fixtures",
+  "integrationFolder": "src/cypress/integration",
+  "pluginsFile": false,
+  "screenshotsFolder": "src/cypress/screenshots",
+  "supportFile": "src/cypress/support/index.tsx",
+  "videosFolder": "src/cypress/videos",
+  "chromeWebSecurity": false,
+  "modifyObstructiveCode": true
+}

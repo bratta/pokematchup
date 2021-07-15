@@ -7,6 +7,10 @@
 
 # testing
 /coverage
+src/cypress/screenshots
+src/cypress/videos
+src/cypress/**/*.js
+test-results.xml
 
 # production
 /build

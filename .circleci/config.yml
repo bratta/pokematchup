@@ -27,6 +27,10 @@ jobs:
           name: Running Unit tests with Jest
           command: npm run test
       - run:
+          name: Start the server before running E2E Tests
+          command: npm start
+          background: true
+      - run:
           name: Running E2E tests with JUnit reporter
           command: npm run cypress:junit
       - store_test_results:

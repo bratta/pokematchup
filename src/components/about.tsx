@@ -26,6 +26,7 @@ export class About extends React.Component {
           reference while playing the games.
         </p>
         <p>Source code is available <a href="https://github.com/bratta/pokematchup">on Github</a>.</p>
+        <p>This code is licensed under the <a href="https://opensource.org/licenses/MIT">MIT License</a>.</p>
       </div>
     );
   }

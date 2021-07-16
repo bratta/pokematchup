@@ -1,6 +1,8 @@
 {
   "name": "pokematchup",
   "version": "0.1.0",
+  "license": "MIT",
+  "author": "Tim Gourley <tgourley@gmail.com> (https://timgourley.com)",
   "private": true,
   "dependencies": {
     "@testing-library/cypress": "^7.0.6",

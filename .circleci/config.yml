@@ -39,3 +39,11 @@ jobs:
           path: src/cypress/videos
       - store_artifacts:
           path: src/cypress/screenshots
+      - run:
+          name: Build the site
+          command: npm run build
+      - type: add_ssh_keys
+        fingerprints:
+          - $PRODUCTION_SSH_FINGERPRINT
+      - run: echo $REMOTE_HOSTKEY >> ~/.ssh/known_hosts
+      - run: scp -P $PRODUCTION_SSH_PORT -r ~/pokematchup/build/* $PRODUCTION_SSH_HOST:~/pokematch/site/

@@ -14,11 +14,13 @@ interface PokemonListProps {
  * @returns The unordered list of Pokemon
  */
 export function PokemonList(props: PokemonListProps) {
-  const pokemonList = props.pokedex.map((pokemon) => (
-    <li key={pokemon.id + '-' + pokemon.name.toLowerCase()} data-pokemon={pokemon.id} onClick={props.clickHandler}>
-      <span className="pokemonName">{pokemon.formattedName ?? pokemon.name}</span>
-      <span className="typeList">{typesForPokemon(pokemon)}</span>
-    </li>
+  const pokemonList = props.pokedex
+    .sort((p1: PokedexEntry, p2: PokedexEntry) => p1.dex_id - p2.dex_id)
+    .map((pokemon) => (
+      <li key={pokemon.id + '-' + pokemon.name.toLowerCase()} data-pokemon={pokemon.id} onClick={props.clickHandler}>
+        <span className="pokemonName">{pokemon.formattedName ?? pokemon.name}</span>
+        <span className="typeList">{typesForPokemon(pokemon)}</span>
+      </li>
     )
   );
   return (

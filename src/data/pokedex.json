@@ -7264,5 +7264,33 @@
     "name": "Calyrex (Shadow Rider)",
     "types": ["Psychic", "Ghost"],
     "fully_evolved": true
+  },
+  {
+    "id": 1039,
+    "dex_id": 899,
+    "name": "Wyrdeer",
+    "types": ["Normal", "Psychic"],
+    "fully_evolved": true
+  },
+  {
+    "id": 1040,
+    "dex_id": 900,
+    "name": "Basculegion",
+    "types": ["Water", "Ghost"],
+    "fully_evolved": true
+  },
+  {
+    "id": 1041,
+    "dex_id": 58,
+    "name": "Growlithe (Hisuian)",
+    "types": ["Fire", "Rock"],
+    "fully_evolved": false
+  },
+  {
+    "id": 1042,
+    "dex_id": 628,
+    "name": "Braviary (Hisuian)",
+    "types": ["Psychic", "Flying"],
+    "fully_evolved": true
   }
 ]

@@ -7,6 +7,6 @@ test('shows a list of suggested pokemon', () => {
   const details = screen.getByTestId('suggestion-summary');
   fireEvent.click(details);
   expect(screen.getByRole('heading', { name: 'Try using one of these Pokémon * :' })).toBeInTheDocument();
-  expect(screen.getByText('Sandslash', { selector: 'span' })).toBeInTheDocument();
-  expect(screen.queryByText('Sandshrew', { selector: 'span' })).not.toBeInTheDocument();
+  expect(screen.getByText('Sandslash (Alolan)', { selector: 'span' })).toBeInTheDocument();
+  expect(screen.queryByText('Sandshrew (Alolan)', { selector: 'span' })).not.toBeInTheDocument();
 });

@@ -17,14 +17,14 @@ test('shows super effective types', () => {
   render(<EffectivenessChart selected={['Fire', 'Grass']} />)
   const superEffective = screen.getByTestId('Super Effective');
   expect(superEffective).toHaveTextContent('flying');
-  expect(superEffective).toHaveTextContent('psychic');
+  expect(superEffective).toHaveTextContent('poison');
   expect(superEffective).toHaveTextContent('rock');
 });
 
 test('shows effective types', () => {
   render(<EffectivenessChart selected={['Fire', 'Grass']} />)
   const effective = screen.getByTestId('Effective');
-  for (const effectiveType of ['bug', 'dark', 'dragon', 'fighting', 'fire', 'ghost', 'ground', 'ice', 'normal', 'poison', 'water']) {
+  for (const effectiveType of ['bug', 'dark', 'dragon', 'fighting', 'fire', 'ghost', 'ground', 'ice', 'normal', 'psychic', 'water']) {
     expect(effective).toHaveTextContent(effectiveType);
   }
 });

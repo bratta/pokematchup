@@ -22,7 +22,7 @@ describe('effectiveness', () => {
 
   test('it calculates effectiveness against a pokemon with two types', () =>  {
     const te = new TypeEffectiveness('fairy');
-    expect(te.effectiveness(['psychic', 'steel'])).toEqual(0.25);
+    expect(te.effectiveness(['psychic', 'steel'])).toEqual(0.5);
     expect(te.effectiveness(['fighting', 'dark'])).toEqual(4.0);
   });
 });
@@ -36,9 +36,9 @@ describe('By', () => {
     expect(nve?.types).toEqual(['bug', 'dark', 'rock']);
     expect(eff?.types).toEqual([
       'dragon', 'electric', 'fighting', 'fire', 'ghost', 'grass',
-      'ground', 'ice', 'normal', 'psychic', 'steel', 'water'
+      'ground', 'ice', 'normal', 'poison', 'steel', 'water'
     ]);
-    expect(sef?.types).toEqual(['fairy', 'flying', 'poison']);
+    expect(sef?.types).toEqual(['fairy', 'flying', 'psychic']);
   });
 
   test('builds a list of effectiveness for two types', () => {
@@ -48,14 +48,14 @@ describe('By', () => {
     const nodmg = results.find(x => x.damage === 0);
     const eff   = results.find(x => x.damage === 1.0);
     const sef   = results.find(x => x.damage === 2.0);
-    expect(nve25?.types).toEqual(['bug', 'fighting']);
-    expect(nve?.types).toEqual(['dark', 'fairy', 'grass']);
+    expect(nve25?.types).toEqual(['fighting']);
+    expect(nve?.types).toEqual(['psychic']);
     expect(nodmg?.types).toEqual(['dragon']);
     expect(eff?.types).toEqual([
-      'electric', 'fire', 'flying', 'ghost', 'ice', 'normal',
-      'psychic', 'rock', 'water'
+      'bug', 'dark', 'electric', 'fairy', 'fire', 'flying', 'grass', 'ground', 'ice', 'normal',
+      'rock', 'water'
     ]);
-    expect(sef?.types).toEqual(['ground', 'poison', 'steel']);
+    expect(sef?.types).toEqual(['ghost', 'poison', 'steel']);
   });
 });
 
@@ -65,16 +65,16 @@ describe('GroupResults', () => {
     const grouped: EffectivenessGroup[] = TypeEffectiveness.GroupResults(results);
     expect(grouped.length).toEqual(5);
     expect(grouped[0].label).toEqual("Super Effective");
-    expect(grouped[0].types).toEqual(['ground', 'poison', 'steel']);
+    expect(grouped[0].types).toEqual(['ghost', 'poison', 'steel']);
     expect(grouped[1].label).toEqual("Effective");
     expect(grouped[1].types).toEqual([
-      'electric', 'fire', 'flying', 'ghost', 'ice', 'normal',
-      'psychic', 'rock', 'water'
+      'bug', 'dark', 'electric', 'fairy', 'fire', 'flying', 'grass', 'ground', 'ice', 'normal',
+      'rock', 'water'
     ]);
     expect(grouped[2].label).toEqual("Not Very Effective");
-    expect(grouped[2].types).toEqual(['dark', 'fairy', 'grass']);
+    expect(grouped[2].types).toEqual(['psychic']);
     expect(grouped[3].label).toEqual("Not Very Effective (0.25x)");
-    expect(grouped[3].types).toEqual(['bug', 'fighting']);
+    expect(grouped[3].types).toEqual(['fighting']);
     expect(grouped[4].label).toEqual("No Effect");
     expect(grouped[4].types).toEqual(['dragon']);
   });

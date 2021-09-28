@@ -7292,5 +7292,12 @@
     "name": "Braviary (Hisuian)",
     "types": ["Psychic", "Flying"],
     "fully_evolved": true
+  },
+  {
+    "id": 1043,
+    "dex_id": 901,
+    "name": "Kleavor",
+    "types": ["Bug", "Rock"],
+    "fully_evolved": true
   }
 ]

@@ -7275,29 +7275,155 @@
   {
     "id": 1040,
     "dex_id": 900,
+    "name": "Kleavor",
+    "types": ["Bug", "Rock"],
+    "fully_evolved": true
+  },
+  {
+    "id": 1041,
+    "dex_id": 901,
+    "name": "Ursaluna",
+    "types": ["Ground", "Normal"],
+    "fully_evolved": true
+  },
+  {
+    "id": 1042,
+    "dex_id": 902,
     "name": "Basculegion",
     "types": ["Water", "Ghost"],
     "fully_evolved": true
   },
   {
-    "id": 1041,
+    "id": 1043,
+    "dex_id": 903,
+    "name": "Sneasler",
+    "types": ["Fighting", "Poison"],
+    "fully_evolved": true
+  },
+  {
+    "id": 1044,
+    "dex_id": 904,
+    "name": "Overqwil",
+    "types": ["Dark", "Poison"],
+    "fully_evolved": true
+  },
+  {
+    "id": 1045,
+    "dex_id": 905,
+    "name": "Enamorus",
+    "types": ["Fairy", "Flying"],
+    "fully_evolved": true
+  },
+  {
+    "id": 1046,
     "dex_id": 58,
     "name": "Growlithe (Hisuian)",
     "types": ["Fire", "Rock"],
     "fully_evolved": false
   },
   {
-    "id": 1042,
+    "id": 1047,
+    "dex_id": 59,
+    "name": "Arcanine (Hisuian)",
+    "types": ["Fire", "Rock"],
+    "fully_evolved": true
+  },
+  {
+    "id": 1048,
+    "dex_id": 100,
+    "name": "Voltorb (Hisuian)",
+    "types": ["Electric", "Grass"],
+    "fully_evolved": false
+  },
+  {
+    "id": 1049,
+    "dex_id": 101,
+    "name": "Electrode (Hisuian)",
+    "types": ["Electric", "Grass"],
+    "fully_evolved": true
+  },
+  {
+    "id": 1050,
+    "dex_id": 157,
+    "name": "Typhlosion (Hisuian)",
+    "types": ["Fire", "Ghost"],
+    "fully_evolved": true
+  },
+  {
+    "id": 1051,
+    "dex_id": 211,
+    "name": "Qwilfish (Hisuian)",
+    "types": ["Dark", "Poison"],
+    "fully_evolved": false
+  },
+  {
+    "id": 1052,
+    "dex_id": 215,
+    "name": "Sneasel (Hisuian)",
+    "types": ["Fighting", "Poison"],
+    "fully_evolved": false
+  },
+  {
+    "id": 1053,
+    "dex_id": 503,
+    "name": "Samurott (Hisuian)",
+    "types": ["Water", "Dark"],
+    "fully_evolved": true
+  },
+  {
+    "id": 1054,
+    "dex_id": 549,
+    "name": "Lilligant (Hisuian)",
+    "types": ["Grass", "Fighting"],
+    "fully_evolved": true
+  },
+  {
+    "id": 1055,
+    "dex_id": 570,
+    "name": "Zorua (Hisuian)",
+    "types": ["Normal", "Ghost"],
+    "fully_evolved": false
+  },
+  {
+    "id": 1056,
+    "dex_id": 571,
+    "name": "Zoroark (Hisuian)",
+    "types": ["Normal", "Ghost"],
+    "fully_evolved": true
+  },
+  {
+    "id": 1057,
     "dex_id": 628,
     "name": "Braviary (Hisuian)",
     "types": ["Psychic", "Flying"],
     "fully_evolved": true
   },
   {
-    "id": 1043,
-    "dex_id": 901,
-    "name": "Kleavor",
-    "types": ["Bug", "Rock"],
+    "id": 1058,
+    "dex_id": 705,
+    "name": "Sligoo (Hisuian)",
+    "types": ["Steel", "Dragon"],
+    "fully_evolved": false
+  },
+  {
+    "id": 1059,
+    "dex_id": 706,
+    "name": "Goodra (Hisuian)",
+    "types": ["Steel", "Dragon"],
+    "fully_evolved": true
+  },
+  {
+    "id": 1060,
+    "dex_id": 713,
+    "name": "Avalugg (Hisuian)",
+    "types": ["Ice", "Rock"],
+    "fully_evolved": true
+  },
+  {
+    "id": 1061,
+    "dex_id": 724,
+    "name": "Decidueye (Hisuian)",
+    "types": ["Grass", "Fighting"],
     "fully_evolved": true
   }
 ]

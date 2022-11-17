@@ -10,6 +10,6 @@ test('shows a list of pokemon having specific types', () => {
 });
 
 test('shows a message when no pokemon match the types', () => {
-  render(<PokemonOfType selected={['fire', 'grass']} />);
+  render(<PokemonOfType selected={['fire', 'fairy']} />);
   expect(screen.queryByText(/No Pokémon have this typing/)).toBeInTheDocument();
 });
